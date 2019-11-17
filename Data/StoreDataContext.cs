@@ -9,7 +9,7 @@ namespace ProductCatalog.Data
         public DbSet<Category> Categories { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=pdtctl;User ID=SA;Password=***");
+            optionsBuilder.UseSqlServer(@"Server=localhost,1433;Database=prodcat;User ID=SA;Password=");
         }
     }
 }
